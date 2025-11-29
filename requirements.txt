@@ -1,0 +1,14 @@
+pandas
+matplotlib
+gradio
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+pypdf
+requests
+sentence-transformers
+torch
+chromadb
+python-dotenv
+asyncio

@@ -1,4 +1,4 @@
-from utils import load_pdf, split_pdf, format_docs
+from utils import load_pdf, split_pdf, format_docs, save_score
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.vectorstores import Chroma
 from dotenv import load_dotenv
@@ -29,9 +29,9 @@ def create_faithfulness_chain():
 
         Analise cada afirmação na 'Resposta'. Compare-a com as informações no 'Contexto'.
         
-        Atribua uma nota de 1 a 5, onde:
-        1: Nenhuma parte da resposta é comprovada pelo contexto.
-        5: TODAS as partes da resposta são EXPLICITAMENTE comprovadas pelo contexto.
+        Atribua uma nota de 0 a 1 utilizando até duas casas decimais, onde:
+        0: Nenhuma parte da resposta é comprovada pelo contexto.
+        1: TODAS as partes da resposta são EXPLICITAMENTE comprovadas pelo contexto.
         
         Responda APENAS com o número da nota, sem explicações.
 
@@ -41,7 +41,7 @@ Contexto:
 Resposta:
 {answer}
 
-Avaliação de Fidelidade (1-5):
+Avaliação de Fidelidade (0-1):
 """
     )
     return prompt | llm | ScoreParser()
@@ -62,7 +62,7 @@ def create_vectorstore(splits, collection_name):
     return vectorstore, retriever
 
 def create_rag_chain_with_source(retriever, prompt):
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
     rag_chain_from_docs = (
         {
@@ -127,9 +127,33 @@ class Chatbot:
         if context_docs:
             context_str = format_docs(context_docs)
             score = await self.faithfulness_chain.ainvoke({"context": context_str, "answer": answer})
-            return f"{answer}\n\n---\n**Faithfulness:** {score:.1f}/5" # Formats the output string
+            save_score(question, answer, score)
+            return f"{answer}\n\n---\n**Faithfulness:** {score:.1f}/1.0" # Formats the output string
         else:
+            save_score(question, answer, 0.0)
             return f"{answer}\n\n---\n**Faithfulness:** N/A (no context retrieved)"
+
+    async def process_questions_from_file(self, file_obj):
+        """
+        Lê perguntas de um arquivo carregado via Gradio, uma por linha, e gera respostas.
+        """
+        if not file_obj:
+            return "Por favor, carregue um arquivo de perguntas (.txt) primeiro."
+
+        filepath = file_obj.name
+        print(f"Iniciando processamento em lote do arquivo: {filepath}...")
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                questions = [line.strip() for line in f if line.strip()]
+        except FileNotFoundError:
+            return f"Erro: Arquivo não encontrado em {filepath}"
+
+        for i, question in enumerate(questions):
+            print(f"--- Processando pergunta {i+1}/{len(questions)}: '{question}' ---")
+            response = await self.generate_response(question)
+            print(f"Resposta gerada:\n{response}\n")
+        
+        return f"Processamento em lote concluído para {len(questions)} perguntas. Verifique o console para ver as respostas."
 
 
 def calc_distances(question, vectorstore):
