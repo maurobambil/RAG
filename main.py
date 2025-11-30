@@ -1,3 +1,4 @@
+#Authors: Mauro Bambil de Paula e Juan Carlos Conceição de Lima Sales
 import llm
 import gradio as gr
 import asyncio
@@ -17,7 +18,7 @@ def main():
     # O Chatbot agora carrega o PDF e inicializa o RAG no construtor.
     chatbot = llm.Chatbot()
     with gr.Blocks() as demo:
-        gr.Markdown("Chat RAG com Gradio")
+        gr.Markdown("Chat RAG com Fact Score")
         
         with gr.Row():
             with gr.Column():
@@ -34,9 +35,9 @@ def main():
                 enviar_botao = gr.Button("Enviar")
 
             with gr.Column():
-                gr.Markdown("### Análise de Faithfulness")
-                plot_botao = gr.Button("Atualizar Gráfico de Faithfulness")
-                plot_output = gr.Image(label="Faithfulness Plot")
+                gr.Markdown("### Análise de Fact Score")
+                plot_botao = gr.Button("Atualizar Gráfico de Fact Score")
+                plot_output = gr.Image(label="Fact Score Plot")
 
         with gr.Row():
             with gr.Column():

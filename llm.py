@@ -26,12 +26,11 @@ class ScoreParser(BaseOutputParser):
                 return float(match.group(0))
             return 0.0
 
-def create_faithfulness_chain():
+def create_factscore_chain():
     """Cria uma cadeia para pontuar a fidelidade de uma resposta ao seu contexto."""
     llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
     prompt = ChatPromptTemplate.from_template(
-        """Você é um avaliador rigoroso. Sua tarefa é verificar a fidelidade de uma 'Resposta' fornecida e se ela pode ser totalmente comprovada usando apenas o 'Contexto' abaixo.
-
+        """Você é um avaliador rigoroso. Sua tarefa é verificar a Fact score de uma 'Resposta' fornecida e se as partes dessa resposta podem ser totalmente comprovada usando apenas o 'Contexto' abaixo.
         Analise cada afirmação na 'Resposta'. Compare-a com as informações no 'Contexto'.
         
         Atribua uma nota de 0 a 1 utilizando até duas casas decimais, onde:
@@ -111,8 +110,9 @@ class Chatbot:
         _, self.retriever = create_vectorstore(splits, self.collection_name)
         self.prompt = set_prompt()
         self.rag_chain_with_source = create_rag_chain_with_source(self.retriever, self.prompt)
-        self.faithfulness_chain = create_faithfulness_chain()
+        self.factscore_chain = create_factscore_chain()
         print("Chatbot inicializado e pronto para receber perguntas.")
+       
         abs_path = os.path.abspath(__file__)
         dir_path = os.path.dirname(abs_path)
         self.save_path = os.path.join(dir_path, "evaluation")
@@ -128,12 +128,12 @@ class Chatbot:
         score = 0.0
         if context_docs:
             context_str = format_docs(context_docs)
-            score = await self.faithfulness_chain.ainvoke({"context": context_str, "answer": answer})
+            score = await self.factscore_chain.ainvoke({"context": context_str, "answer": answer})
             save_score(question, answer, score, self.save_path)
-            return f"{answer}\n\n---\n**Faithfulness:** {score:.1f}/1.0" # Formats the output string
+            return f"{answer}\n\n---\n**fact score:** {score:.1f}/1.0" # Formats the output string
         else:
             save_score(question, answer, 0.0, self.save_path)
-            return f"{answer}\n\n---\n**Faithfulness:** N/A (no context retrieved)"
+            return f"{answer}\n\n---\n**fact score:** N/A (no context retrieved)"
 
     async def process_questions_from_file(self, file_obj):
         """

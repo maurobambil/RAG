@@ -1,4 +1,4 @@
-# Chatbot RAG com Gradio e Avaliação de Fidelidade
+# Chatbot RAG com Avaliação de Fidelidade
 
 Este projeto foi feito como trabalho para disciplina de Redes Neurais da UFMS em 2025/2 e implementa um chatbot de Recuperação Aumentada de Geração (RAG) que utiliza um documento PDF como base de conhecimento. A interface do usuário é construída com Gradio, permitindo que os usuários façam perguntas e recebam respostas baseadas no conteúdo do PDF, com uma avaliação automática da fidelidade da resposta.
 
