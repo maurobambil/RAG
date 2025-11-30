@@ -6,10 +6,15 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 from langchain_core.output_parsers import StrOutputParser, BaseOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
-import asyncio
-#from langchain.schema import BaseOutputParser
+import os
 import re
 
+def load_and_split(url):
+    print(f"Carregando o PDF da URL: {url}...")
+    tmp_path, is_url = load_pdf(url)
+    print("Dividindo o PDF em partes...")
+    splits = split_pdf(tmp_path, is_url)
+    return splits
 
 class ScoreParser(BaseOutputParser):
     def parse(self, text: str) -> float:
@@ -47,12 +52,6 @@ Avaliação de Fidelidade (0-1):
     return prompt | llm | ScoreParser()
 
 
-def load_and_split(url):
-    print(f"Carregando o PDF da URL: {url}...")
-    tmp_path = load_pdf(url)
-    print("Dividindo o PDF em partes...")
-    splits = split_pdf(tmp_path)
-    return splits
 
 def create_vectorstore(splits, collection_name):
     print("Criando base de vetores")
@@ -114,6 +113,9 @@ class Chatbot:
         self.rag_chain_with_source = create_rag_chain_with_source(self.retriever, self.prompt)
         self.faithfulness_chain = create_faithfulness_chain()
         print("Chatbot inicializado e pronto para receber perguntas.")
+        abs_path = os.path.abspath(__file__)
+        dir_path = os.path.dirname(abs_path)
+        self.save_path = os.path.join(dir_path, "evaluation")
 
     async def generate_response(self, question: str):
         if not self.rag_chain_with_source:
@@ -127,10 +129,10 @@ class Chatbot:
         if context_docs:
             context_str = format_docs(context_docs)
             score = await self.faithfulness_chain.ainvoke({"context": context_str, "answer": answer})
-            save_score(question, answer, score)
+            save_score(question, answer, score, self.save_path)
             return f"{answer}\n\n---\n**Faithfulness:** {score:.1f}/1.0" # Formats the output string
         else:
-            save_score(question, answer, 0.0)
+            save_score(question, answer, 0.0, self.save_path)
             return f"{answer}\n\n---\n**Faithfulness:** N/A (no context retrieved)"
 
     async def process_questions_from_file(self, file_obj):
@@ -155,6 +157,3 @@ class Chatbot:
         
         return f"Processamento em lote concluído para {len(questions)} perguntas. Verifique o console para ver as respostas."
 
-
-def calc_distances(question, vectorstore):
-    pass

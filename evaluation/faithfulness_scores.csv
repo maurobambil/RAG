@@ -1,0 +1,148 @@
+timestamp,question,answer,faithfulness_score
+2025-11-30T11:34:09.663947,Como um estudante pode se registrar no mestrado,"Não há informações no contexto fornecido sobre como um estudante pode se registrar no mestrado. O texto aborda a composição das bancas examinadoras, os critérios para a defesa de tese/dissertação, quem não pode compor as bancas, a forma da dissertação/tese e a definição de estudante ouvinte.
+
+A única menção a ""matrícula de ingresso"" é no Art. 52, que usa este termo como ponto de partida para o prazo máximo de defesa da dissertação de Mestrado, mas não descreve o processo de registro em si:
+* Art. 52. A Defesa da Dissertação de Mestrado será realizada em sessão pública, até o prazo máximo de vinte e quatro meses, a contar a par r da matrícula de ingresso (...) (Página 90).",1.0
+2025-11-30T11:37:23.986952,Como um aluno pode ser desligado do curso,"Um aluno pode ser desligado do curso nas seguintes situações:
+
+1.  **Deixar de renovar a matrícula ou não justificar a ausência da renovação:**
+    *   **Condição:** Deixar de renovar a sua matrícula e não apresentar justificativa ao Colegiado de Curso em até trinta dias após a data de matrícula.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: I – deixar de renovar a sua matrícula e não apresentar jus ﬁca va ao Colegiado de Curso em até trinta dias após a data de matrícula;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+2.  **Ultrapassar o prazo máximo de conclusão sem prorrogação:**
+    *   **Condição:** Ultrapassar o prazo máximo de vinte e quatro meses para a conclusão do Curso de Mestrado e de quarenta e oito meses para a conclusão do Curso de Doutorado, deixando de apresentar, em tempo hábil, requerimento de prorrogação de prazo.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: II – ultrapassar o prazo máximo de vinte e quatro meses para a conclusão do Curso de Mestrado e de quarenta e oito meses para a conclusão do Curso de Doutorado, deixando de apresentar, em tempo hábil, requerimento de prorrogação de prazo;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+3.  **Não cumprir atividades ou exigências nos prazos:**
+    *   **Condição:** Não cumprir as atividades ou as exigências nos prazos estabelecidos neste Regulamento.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: III – não cumprir as a vidades ou as exigências nos prazos estabelecidos neste Regulamento;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+4.  **Não cumprir as regras do Regulamento dos Cursos de Pós-Graduação Stricto Sensu da UFMS:**
+    *   **Condição:** Não cumprir as regras previstas no Regulamento dos Cursos de Pós-Graduação Stricto Sensu da UFMS.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: IV – não cumprir as regras previstas no Regulamento dos Cursos de Pós- Graduação Stricto Sensu da UFMS;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+5.  **Não obter aprovação em pelo menos duas disciplinas no primeiro semestre letivo:**
+    *   **Condição:** Não obter, no primeiro semestre letivo, aprovação em pelo menos duas disciplinas dos Grupos I, II, III ou IV.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: V – não ob ver, no primeiro semestre le vo, aprovação em pelo menos duas disciplinas dos Grupos I, II, III ou IV;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+6.  **Reprovar em alguma disciplina no primeiro semestre letivo:**
+    *   **Condição:** Reprovar em alguma disciplina no seu primeiro semestre letivo.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: VI – reprovar em alguma disciplina no seu primeiro semestre le vo;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+7.  **Obter coeficiente de rendimento acumulado inferior a 1,5 no primeiro semestre letivo:**
+    *   **Condição:** Ao fim do seu primeiro semestre letivo, obter coeficiente de rendimento acumulado inferior a 1,5 (um vírgula cinco).
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: VII – ao ﬁm do seu primeiro semestre le vo, ob ver coeﬁciente de rendimento acumulado inferior a 1,5 - um vírgula cinco;""
+    *   **Página:** Não especificado no contexto fornecido.
+
+8.  **Não definir o Orientador até o fim do primeiro semestre letivo:**
+    *   **Condição:** Não definir o Orientador até o fim do seu primeiro semestre letivo.
+    *   **Texto utilizado:** ""Sensu, será desligado do Curso o estudante que: VIII – não deﬁnir o Orientador até o ﬁm do seu primeiro semestre le vo; e""
+    *   **Página:** Não especificado no contexto fornecido.
+
+9.  **Não realizar novo Exame de Qualificação após reprovação no prazo estabelecido:**
+    *   **Condição:** Após ser reprovado no Exame de Qualificação, não realizar um novo exame no período máximo de três meses, observando os prazos para Qualificação e Defesa previstos no Regulamento.
+    *   **Texto utilizado:** ""§ 5º O estudante reprovado poderá realizar novo Exame de Qualiﬁcação no período máximo de três meses após o primeiro, observando os prazos para Qualiﬁcação e Defesa previstos neste Regulamento, sob pena de desligamento do Curso.""
+    *   **Página:** Não especificado no contexto fornecido.",1.0
+2025-11-30T13:48:33.369400,Como um estudante pode entrar no mestrado,"Não há informações no contexto fornecido sobre como um estudante pode entrar no mestrado. O texto aborda tópicos como a composição da banca examinadora para defesa de tese e dissertação, critérios para a defesa, avaliação, prazos de matrícula de ingresso para defesa, quem não pode compor a banca, a forma da dissertação/tese, e a estrutura curricular e créditos após o ingresso.
+
+**Textos utilizados:**
+*   ""Art. 52. A Defesa da Dissertação de Mestrado será realizada em sessão pública, até o prazo máximo de vinte e quatro meses, a contar a par r da matrícula de ingresso..."" (Pg. 90)
+*   ""...em até um ano antes do ingresso do estudante nos Cursos de Mestrado e Doutorado, contabiliza quatro créditos..."" (Sem Artigo/Inciso, Pg. 91)",1.0
+2025-11-30T13:50:44.724337,Quais são os tipos de cursos de pós-graduação stricto sensu previstos nesse regulamento e quais as modalidades (acadêmica/profissional)?,"Com base no contexto fornecido, os tipos de cursos de pós-graduação stricto sensu mencionados são:
+
+*   **Mestrado**
+*   **Doutorado**
+
+Não há informações no contexto sobre as modalidades (acadêmica/profissional) dos cursos de pós-graduação stricto sensu. O texto menciona ""modalidade presencial"" e ""modalidade a distância"" em relação à Banca Examinadora da Qualificação, mas não aos tipos de cursos em si.
+
+**Textos utilizados:**
+
+*   Art. 38 (página não especificada no trecho, mas é a que contém o artigo)",1.0
+2025-11-30T13:50:50.802765,Qual é o objetivo de um Mestrado Profissional segundo o regulamento?,Não há informações no contexto fornecido que descrevam qual é o objetivo de um Mestrado Profissional.,1.0
+2025-11-30T13:51:15.182818,O regulamento prevê Doutorado Profissional? Com qual objetivo ele é definido?,"Não há menção no contexto fornecido sobre a previsão ou definição de Doutorado Profissional. O texto se refere a ""Mestrado"" e ""Doutorado"" de forma geral, com regras para a defesa da Tese de Doutorado e critérios para cursos de Pós-Graduação Stricto Sensu, mas não especifica a modalidade ""Profissional"" nem seu objetivo.
+
+**Não sei.**",0.99
+2025-11-30T13:51:22.668602,É possível fazer doutorado direto sem ter feito mestrado? Em quais condições o regulamento permite isso?,"Não há informações no contexto fornecido que respondam se é possível fazer doutorado direto sem ter feito mestrado, nem em quais condições o regulamento permitiria isso. O texto descreve os requisitos para a Defesa da Dissertação de Mestrado (Art. 52) e para a Defesa da Tese de Doutorado (Art. 53), mas não aborda a possibilidade de ingresso direto no doutorado sem a conclusão prévia do mestrado.",1.0
+2025-11-30T13:51:39.279747,O que o regulamento exige sobre proficiência em língua estrangeira para mestrado e doutorado?,"O regulamento exige o seguinte sobre proficiência em língua estrangeira para mestrado e doutorado:
+
+1.  **Proficiência em Língua Inglesa (obrigatória para Mestrado e Doutorado):**
+    *   É obrigatória a comprovação de proficiência na língua inglesa para os Cursos de Mestrado e Doutorado.
+    *   A comprovação de proficiência na língua inglesa para o Curso de Mestrado poderá ser realizada até o fim do quarto semestre do Curso.
+    *   Para o Curso de Doutorado, a comprovação de proficiência na língua inglesa poderá ser realizada até o fim do sexto semestre do Curso.
+    *   As normas para essa comprovação devem seguir o que está neste Regulamento e no Regulamento Geral dos Cursos de Pós-Graduação Stricto Sensu da UFMS.
+
+2.  **Proficiência em Língua Portuguesa (para candidatos específicos):**
+    *   Candidatos estrangeiros ou naturalizados que não sejam lusófonos (ou seja, não falam português como língua nativa) deverão comprovar proficiência em língua portuguesa.
+
+**Textos utilizados para a resposta:**
+
+*   **Art. 32.** Para os Cursos de Mestrado e Doutorado, é obrigatória a comprovação de proficiência na língua inglesa, segundo normas constantes neste Regulamento e no Regulamento Geral dos Cursos de Pós-Graduação Stricto Sensu da UFMS. (Página 91)
+*   **Art. 32 §1º** A comprovação de proficiência, na língua inglesa, para o Curso de Mestrado, poderá ser realizada até o fim do quarto semestre do Curso, e, para o Curso de Doutorado, poderá ser realizada até o fim do sexto semestre do Curso. (Página 91)
+*   **Art. 32 §2º** Os candidatos estrangeiros ou naturalizados, não lusófonos, deverão comprovar proficiência em língua portuguesa. (Página 91)",0.83
+2025-11-30T13:51:47.363464,O que o regulamento prevê para estudantes estrangeiros em relação à língua portuguesa ou língua estrangeira?,"O regulamento prevê o seguinte para estudantes estrangeiros em relação à língua portuguesa ou língua estrangeira:
+
+1.  **Proficiência em Língua Inglesa:**
+    *   É obrigatória a comprovação de proficiência na língua inglesa para os Cursos de Mestrado e Doutorado.
+    *   Para o Curso de Mestrado, a comprovação pode ser realizada até o fim do quarto semestre do Curso.
+    *   Para o Curso de Doutorado, a comprovação pode ser realizada até o fim do sexto semestre do Curso.
+
+2.  **Proficiência em Língua Portuguesa:**
+    *   Os candidatos estrangeiros ou naturalizados que não são lusófonos (não falam português como língua materna) deverão comprovar proficiência em língua portuguesa.
+
+**Textos utilizados para a resposta:**
+
+*   **Art. 32.** Para os Cursos de Mestrado e Doutorado, é obrigatória a comprovação de proficiência na língua inglesa, segundo normas constantes neste Regulamento e no Regulamento Geral dos Cursos de Pós-Graduação Stricto Sensu da UFMS. (Pg. 91)
+*   **Art. 32. §1º** A comprovação de proficiência, na língua inglesa, para o Curso de Mestrado, poderá ser realizada até o fim do quarto semestre do Curso, e, para o Curso de Doutorado, poderá ser realizada até o fim do sexto semestre do Curso. (Pg. 91)
+*   **Art. 32. §2º** Os candidatos estrangeiros ou naturalizados, não lusófonos, deverão comprovar proficiência em língua portuguesa. (Pg. 91)",1.0
+2025-11-30T13:51:58.245517,"Como funciona a convalidação de créditos de disciplinas cursadas em outro programa, segundo o regulamento?","Segundo o regulamento presente no contexto, a convalidação de créditos de disciplinas cursadas para a obtenção do título de Mestre não será realizada para o Curso de Doutorado. O contexto não detalha como funcionaria a convalidação de créditos de disciplinas cursadas em outros programas que não sejam o de Mestrado para o Doutorado.
+
+**Texto utilizado:**
+
+*   ""§ 1º Créditos em disciplinas cursadas para a obtenção do título de Mestre não serão convalidados no Doutorado."" (Parte do Art. 28, § 1º)
+
+**Página para acesso:**
+A página específica para o Art. 28, § 1º não é fornecida no contexto.",1.0
+2025-11-30T13:52:06.809204,Em quais situações o estudante pode ser desligado do curso de pós-graduação de acordo com o regulamento?,"De acordo com o contexto fornecido, não há informações detalhadas sobre as situações em que um estudante pode ser desligado do curso de pós-graduação.
+
+Há uma menção a ""sanções legais cabíveis"" em uma frase incompleta, mas não especifica as condições para o desligamento de estudantes.
+
+Texto utilizado:
+""já tenha sido publicada a Resolução de homologação do resultado ﬁnal, sem prejuízo das sanções legais cabíveis."" (Página 82)",1.0
+2025-11-30T13:52:19.052758,O que o regulamento diz sobre renovação de vínculo acadêmico e trancamento de matrícula em disciplinas?,"O regulamento, com base no contexto fornecido, aborda o trancamento de matrícula em disciplinas, mas não menciona a renovação de vínculo acadêmico.
+
+**Sobre o trancamento de matrícula em disciplinas:**
+
+O estudante, com a anuência de seu Orientador, tem a possibilidade de solicitar ao Colegiado de Curso o trancamento de matrícula em uma ou mais disciplinas. Este procedimento deve seguir o que está previsto no Regulamento dos Cursos de Pós-Graduação Stricto Sensu.
+
+**Texto utilizado:**
+*   Art. 46 (Página 89)
+
+**Sobre a renovação de vínculo acadêmico:**
+
+O contexto fornecido não contém informações sobre a renovação de vínculo acadêmico. São mencionadas prorrogações de prazos para qualificação e defesa de tese, mas não há detalhes sobre a renovação do vínculo acadêmico em si. Portanto, não é possível fornecer uma resposta sobre este tópico com base no texto dado.",1.0
+2025-11-30T13:52:29.697910,O regulamento permite defesa de dissertação ou tese em sessão fechada? Em quais casos?,"Não, o regulamento não permite a defesa de dissertação ou tese em sessão fechada. Pelo contrário, o Art. 56 estabelece que a sessão de Defesa da Dissertação e/ou da Tese deve ser **pública**. Não há menção de casos em que a sessão possa ser fechada no contexto fornecido.
+
+**Textos utilizados para sua resposta:**
+*   Art. 56 (pág. 92)",1.0
+2025-11-30T13:52:37.487798,"Se eu for reprovado no exame de qualificação, posso refazer o exame? O que o regulamento diz exatamente?","Com base apenas no contexto fornecido, não há informações que detalhem se um estudante reprovado no exame de qualificação pode refazê-lo, nem o que o regulamento diz exatamente sobre essa situação.
+
+Não há artigos ou parágrafos que abordem a reprovação no exame de qualificação ou a possibilidade de realizá-lo novamente.",1.0
+2025-11-30T13:52:46.697522,O estágio de docência é obrigatório para estudantes de pós-graduação? Em quais situações o regulamento prevê esse estágio?,Não há informações no contexto fornecido sobre a obrigatoriedade ou as situações em que o estágio de docência é previsto para estudantes de pós-graduação.,1.0
+2025-11-30T13:52:53.694571,Atividades especiais podem contar como créditos no curso? Há algum limite definido no regulamento?,"Sim, atividades especiais podem contar como créditos no curso, especificamente a publicação de artigo científico.
+
+Um artigo científico publicado em periódico ou conferência com Qualis no estrato restrito na área de Ciência da Computação, em até um ano antes do ingresso do estudante nos Cursos de Mestrado e Doutorado, contabiliza quatro créditos com conceito “A” no grupo IV.
+
+Há um limite definido no regulamento para essa atividade, sendo admitida a contabilização de no máximo um artigo científico.
+
+**Textos utilizados:**
+
+*   § 2º da página 91 (do contexto inicial, antes do Art. 29).",1.0
+2025-11-30T13:53:16.708554,"Quando algo não está previsto explicitamente no regulamento, quem é responsável por decidir esses casos?","Não sei, pois o contexto fornecido não menciona quem é responsável por decidir casos não previstos explicitamente no regulamento.",1.0
+2025-11-30T13:53:24.346419,Qual é o prazo para entrega do TCC na graduação em Ciência da Computação?,"Não há informações no contexto fornecido sobre o prazo para entrega do TCC na graduação em Ciência da Computação. O texto trata exclusivamente da Pós-Graduação Stricto Sensu da UFMS, mencionando requisitos e prazos para Mestrado e Doutorado.",1.0
+2025-11-30T13:53:29.576083,Como faço para conseguir bolsa de estudos em computação em uma universidade na Europa?,"Não sei, pois o contexto fornecido não contém informações sobre como conseguir bolsas de estudo em computação em universidades na Europa. O contexto aborda a Pós-Graduação Stricto Sensu da UFMS, seus requisitos e prazos.",1.0

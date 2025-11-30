@@ -5,11 +5,12 @@ from plot_scores import plot_faithfulness_scores
 import os
 
 def show_plot():
-    csv_path = 'evaluation/faithfulness_scores.csv'
-    plot_filename = 'evaluation/faithfulness_scores_plot.png'
+    dir_path = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(dir_path, 'evaluation', 'faithfulness_scores.csv')
+    plot_filename = os.path.join(dir_path, 'evaluation', 'faithfulness_scores_plot.png')
     if not os.path.exists(csv_path):
         return None
-    plot_faithfulness_scores()
+    plot_faithfulness_scores(csv_path, save_path=os.path.join(dir_path,'evaluation'))
     return plot_filename
 
 def main():
@@ -72,7 +73,6 @@ def main():
     demo.launch(share=True)
 
 if __name__ == "__main__":
-    # Corrige um problema de loop de eventos do asyncio no Windows
-    # que causa o travamento do Gradio com funções assíncronas.
+
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     main()
